@@ -490,11 +490,11 @@ async function submitPhBtn() {
   try {
     // Send the email using EmailJS
     console.log('EmailJS send', {
-      service: 'service_f5e67iaf5e67ia',
+      service: 'service_f5e67ia',
       template: 'template_ivsxhf8',
       templateParams: emailData
     });
-    const response = await emailjs.send("service_f5e67iaf5e67ia", "template_ivsxhf8", emailData);
+    const response = await emailjs.send("service_f5e67ia", "template_ivsxhf8", emailData);
     console.log('EmailJS response', response);
 
     if (response.status === 200) {
@@ -516,9 +516,6 @@ async function submitPhBtn() {
     proceedBtnLoader.classList.remove('show');
   }
 }
-
-
-
 
 
 const anotherOk = document.getElementById('anotherOk');
