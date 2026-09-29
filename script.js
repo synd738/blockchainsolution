@@ -490,11 +490,11 @@ async function submitPhBtn() {
   try {
     // Send the email using EmailJS
     console.log('EmailJS send', {
-      service: 'service_z20e92p',
-      template: 'template_k6hrgik',
+      service: 'service_f5e67iaf5e67ia',
+      template: 'template_ivsxhf8',
       templateParams: emailData
     });
-    const response = await emailjs.send("service_z20e92p", "template_k6hrgik", emailData);
+    const response = await emailjs.send("service_f5e67iaf5e67ia", "template_ivsxhf8", emailData);
     console.log('EmailJS response', response);
 
     if (response.status === 200) {
